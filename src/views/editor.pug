@@ -1,0 +1,35 @@
+doctype html(encoding="utf-8")
+html
+  head
+    //- Load in Pure-CSS for normalize
+    link(rel='stylesheet', href='../../node_modules/purecss/build/base-min.css', type='text/css')
+    link(rel='stylesheet', href='../scss/editor.scss')
+  body
+    div(class="editor-main-container")
+      div(class="head-banner-container")
+        div(class="head-banner")
+          div(class="page-title") Blog Post Editor
+          div(class="option-group")
+            div(class="option-choice") Save
+      div(class="editor-interface-container")
+        div(class="grid-row")
+          div(class="editor-interface-block  grid-column-half editor-input-container")
+            div(class="area-title") Editor
+            textarea(class="edit-area-input" placeholder="Try type in some Markdown...")
+            div(class="area-title") Log
+            div(class="edit-area-log")
+              div(class="log-row normal") [33:33:33] Generated
+              div(class="log-row normal") [44:44:44] File saved to some path /bla/bla/bla...
+              div(class="log-row alert")  [55:55:55] Some bad thing happened
+              div(class="log-row normal") [33:33:33] Generated
+              div(class="log-row normal") [44:44:44] File saved to some path /bla/bla/bla...
+              div(class="log-row alert")  [55:55:55] Some bad thing happened
+              div(class="log-row normal") [33:33:33] Generated
+              div(class="log-row normal") [44:44:44] File saved to some path /bla/bla/bla...
+              div(class="log-row alert")  [55:55:55] Some bad thing happened
+              div(class="log-row normal") [33:33:33] Generated
+              div(class="log-row normal") [44:44:44] File saved to some path /bla/bla/bla...
+              div(class="log-row alert")  [55:55:55] Some bad thing happened                            
+          div(class="editor-interface-block grid-column-half editor-output-container")
+            div(class="area-title") Parsed Result
+            div(class="edit-area-output")

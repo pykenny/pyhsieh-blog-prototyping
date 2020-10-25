@@ -1,0 +1,29 @@
+{
+  "name": "pyhsieh-blog-prototyping",
+  "version": "0.1.0",
+  "description": "Sandbox for prototyping a toy blog system. Also for familiarizing myself with Yarn, Pug, SASS, Parcel, and more.",
+  "main": "editor.html",
+  "repository": "https://github.com/pykenny/pyhsieh-blog-prototyping.git",
+  "author": "Po-Yu Hsieh <pykenny@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1",
+    "purecss": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-react": "^7.12.1",
+    "autoprefixer": "9.8.6",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^8.1.0",
+    "postcss-modules": "^3.2.2",
+    "pug": "^3.0.0",
+    "sass": "^1.27.0"
+  },
+  "scripts": {
+    "dev": "parcel src/views/*.pug",
+    "cleanup": "rm -rf .cache dist",
+    "build": "yarn cleanup && parcel build src/views/*.pug"
+  }
+}
